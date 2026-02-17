@@ -48,6 +48,14 @@ Before you start, make sure you have already created a Telegram Bot. Here is
 a [comprehensive guide](https://docs.telegram-mini-apps.com/platform/creating-new-app)
 on how to do it.
 
+### Configure Bot Menu Button
+
+This repository includes `scripts/configure-bot-menu.sh` to point the bot menu button
+to your deployed Mini App URL.
+
+1. Put your values in `.env.local` (see `.env.example`).
+2. Run `./scripts/configure-bot-menu.sh`.
+
 ## Run
 
 Although Mini Apps are designed to be opened
@@ -71,10 +79,10 @@ After this, you will see a similar message in your terminal:
 ```bash
 VITE v5.2.12  ready in 237 ms
 
-➜  Local:   https://localhost:5173/reactjs-template
-➜  Network: https://172.18.16.1:5173/reactjs-template
-➜  Network: https://172.19.32.1:5173/reactjs-template
-➜  Network: https://192.168.0.171:5173/reactjs-template
+➜  Local:   https://localhost:5173/telegram-miniapp-react-template
+➜  Network: https://172.18.16.1:5173/telegram-miniapp-react-template
+➜  Network: https://172.19.32.1:5173/telegram-miniapp-react-template
+➜  Network: https://192.168.0.171:5173/telegram-miniapp-react-template
 ➜  press h + enter to show help
 ```
 
@@ -82,7 +90,7 @@ Here, you can see the `Local` link, available locally, and `Network` links
 accessible to all devices in the same network with the current device.
 
 To view the application, you need to open the `Local`
-link (`https://localhost:5173/reactjs-template` in this example) in your
+link (`https://localhost:5173/telegram-miniapp-react-template` in this example) in your
 browser:
 
 ![Application](assets/application.png)
